@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderAura Travels</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2>WanderAura</h2>
+
+            <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#destinations">Destinations</a></li>
+    <li><a href="#tours">Tours</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+
+            <button onclick="openBooking()">Book Now</button>
+        </nav>
+    </header>
+    <section class="destinations" id="destinations"></section>
+    <div class="section-title">
+        <p>EXPLORE THE WORLD</p>
+        <h2>Popular Destinations</h2>
+    </div>
+
+    <div class="destination-grid">
+
+        <div class="destination-card">
+            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34" alt="Paris">
+            <div>
+                <h3>Paris</h3>
+                <p>France</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390" alt="New York">
+            <div>
+                <h3>New York</h3>
+                <p>USA</p>
+            </div>
+        </div>
+
+        <div class="destination-card">
+            <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2" alt="Bali">
+            <div>
+                <h3>Bali</h3>
+                <p>Indonesia</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="tours" id="tours"></section>
+    <div class="section-title">
+        <p>CHOOSE YOUR ADVENTURE</p>
+        <h2>Popular Travel Packages</h2>
+    </div>
+
+    <div class="tour-grid">
+
+        <div class="tour-card">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Mountain Adventure">
+            <div class="tour-info">
+                <h3>Mountain Adventure</h3>
+                <p>7 Days • Nature & Adventure</p>
+                <h4>$899</h4>
+                <button>View Package</button>
+            </div>
+        </div>
+
+        <div class="tour-card">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Tropical Escape">
+            <div class="tour-info">
+                <h3>Tropical Escape</h3>
+                <p>5 Days • Beach & Relaxation</p>
+                <h4>$699</h4>
+                <button>View Package</button>
+            </div>
+        </div>
+
+        <div class="tour-card">
+            <img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0" alt="European Tour">
+            <div class="tour-info">
+                <h3>European Explorer</h3>
+                <p>10 Days • Cities & Culture</p>
+                <h4>$1,499</h4>
+                <button>View Package</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="about" id="about"></section>
+    <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff"
+             alt="Travel Adventure">
+    </div>
+
+    <div class="about-content">
+        <p>ABOUT WANDERAURA</p>
+        <h2>Travel More. Discover More.</h2>
+
+        <p>
+            WanderAura Travels helps you discover beautiful destinations,
+            exciting adventures and unforgettable travel experiences.
+            We make your journey simple, comfortable and memorable.
+        </p>
+
+        <div class="about-stats">
+            <div>
+                <h3>50+</h3>
+                <span>Destinations</span>
+            </div>
+
+            <div>
+                <h3>10K+</h3>
+                <span>Happy Travelers</span>
+            </div>
+
+            <div>
+                <h3>8+</h3>
+                <span>Years Experience</span>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact" id="contact"></section>
+    <div class="contact-content">
+        <p>GET IN TOUCH</p>
+        <h2>Ready for Your Next Adventure?</h2>
+        <p>
+            Have a question or want to plan your next trip?
+            Contact WanderAura Travels today.
+        </p>
+    </div>
+
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+<footer>
+    <div class="footer-content">
+        <h2>WanderAura</h2>
+        <p>Explore the world. Create unforgettable memories.</p>
+    </div>
+
+    <div class="footer-links">
+        <a href="#">Home</a>
+        <a href="#">Destinations</a>
+        <a href="#">Tours</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <p class="copyright">
+        © 2026 WanderAura Travels. All Rights Reserved.
+    </p>
+</footer>
+
+    <main>
+        <section class="hero" id="home"></section>
+            <div class="hero-content">
+                <p>EXPLORE • DISCOVER • TRAVEL</p>
+
+                <h1>
+                    Discover Your
+                    <span>Dream Destination</span>
+                </h1>
+
+                <p>
+                    Explore beautiful places, unforgettable adventures,
+                    and amazing travel experiences with WanderAura.
+                </p>
+
+                <button>Explore Destinations</button>
+            </div>
+        </section>
+    </main>
+<div class="booking-modal" id="bookingModal">
+    <div class="booking-box">
+        <button class="close-btn" onclick="closeBooking()">×</button>
+
+        <h2>Book Your Trip</h2>
+        <p>Plan your next adventure with WanderAura.</p>
+
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+
+        <select>
+            <option>Select Destination</option>
+            <option>Paris</option>
+            <option>New York</option>
+            <option>Bali</option>
+        </select>
+
+        <input type="date">
+
+        <button onclick="submitBooking()">Confirm Booking</button>
+    </div>
+</div>
+
+<script>
+function openBooking() {
+    document.getElementById("bookingModal").style.display = "flex";
+}
+
+function closeBooking() {
+    document.getElementById("bookingModal").style.display = "none";
+}
+
+function submitBooking() {
+    alert("Thank you! Your booking request has been received.");
+    closeBooking();
+}
+</script>
+<script src="script.js"></script>
+</body>
+</html>
